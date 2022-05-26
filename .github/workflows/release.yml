@@ -5,9 +5,9 @@ jobs:
   release:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
-      issues: read
+      issues: write
     steps:
       - id: checkout
         uses: actions/checkout@v3
