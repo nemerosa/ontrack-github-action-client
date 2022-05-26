@@ -19,6 +19,6 @@ jobs:
       - id: npm-ci
         run: npm ci
       - id: npm-publish
-        run: npm publish
+        run: npx semantic-release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

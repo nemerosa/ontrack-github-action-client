@@ -22,5 +22,8 @@
   "homepage": "https://github.com/nemerosa/ontrack-github-action-client#readme",
   "dependencies": {
     "cross-fetch": "^3.1.5"
+  },
+  "devDependencies": {
+    "semantic-release": "^19.0.2"
   }
 }
