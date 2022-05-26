@@ -1,0 +1,26 @@
+{
+  "name": "ontrack-github-action-client",
+  "version": "0.1.0",
+  "description": "Reusable low-level Ontrack GraphQL client for GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemerosa/ontrack-github-action-client.git"
+  },
+  "keywords": [
+    "ontrack",
+    "graphql"
+  ],
+  "author": "Damien Coraboeuf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nemerosa/ontrack-github-action-client/issues"
+  },
+  "homepage": "https://github.com/nemerosa/ontrack-github-action-client#readme",
+  "dependencies": {
+    "cross-fetch": "^3.1.5"
+  }
+}
