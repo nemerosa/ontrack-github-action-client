@@ -1,8 +1,7 @@
 on:
-  push:
-    branches:
-      - main
-  pull_request:
+  release:
+    types:
+      - created
 
 jobs:
   build:
@@ -17,5 +16,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16.x'
+          scope: '@nemerosa'
       - id: npm-ci
         run: npm ci
+      - id: npm-publish
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
