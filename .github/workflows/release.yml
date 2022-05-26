@@ -4,7 +4,7 @@ on:
       - created
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -16,6 +16,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16.x'
+          registry-url: 'https://npm.pkg.github.com'
           scope: '@nemerosa'
       - id: npm-ci
         run: npm ci
