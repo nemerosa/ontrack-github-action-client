@@ -1,6 +1,6 @@
 {
   "name": "@nemerosa/ontrack-github-action-client",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Reusable low-level Ontrack GraphQL client for GitHub Actions",
   "main": "index.js",
   "scripts": {
