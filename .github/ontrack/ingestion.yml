@@ -1,3 +1,5 @@
+general:
+  validationJobPrefix: false
 workflows:
   filter:
     includes: build
