@@ -18,3 +18,9 @@ tagging:
     - type: promotion
       config:
         name: BRONZE
+casc:
+  project:
+    casc:
+      properties:
+        buildLinkDisplayProperty:
+          useLabel: true
