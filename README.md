@@ -7,13 +7,13 @@ Reusable low-level Ontrack GraphQL client for GitHub Actions.
 
 ```bash
 npm login --scope=@nemerosa --registry=https://npm.pkg.github.com
-npm install @nemerosa/ontrack-github-ingestion-build-links
+npm install @nemerosa/ontrack-github-action-client
 ```
 
 # Usage
 
 ```javascript
-const client = require('@nemerosa/ontrack-github-ingestion-build-links');
+const client = require('@nemerosa/ontrack-github-action-client');
 
 // logging: true or false or undefined
 const clientEnvironment = client.checkEnvironment(logging);
@@ -33,7 +33,7 @@ Typically, these will be defined at repository or organization level and exposed
 
 ```yaml
 env:
-  ONTRACK_URL: "${{ secrets.ONTRACK_URL }}"
+  ONTRACK_URL: "${{ vars.ONTRACK_URL }}"
   ONTRACK_TOKEN: "${{ secrets.ONTRACK_TOKEN }}"
 ```
 

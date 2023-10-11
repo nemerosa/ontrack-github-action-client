@@ -38,7 +38,11 @@ const graphQL = async (clientEnvironment, query, variables, logging) => {
         })
     });
     if (result.status >= 200 && result.status < 300) {
-        return result.json();
+        const json = await result.json();
+        if (logging) {
+            console.log("Answer: ", json);
+        }
+        return json;
     } else {
         throw Error(`HTTP ${result.status}`);
     }
