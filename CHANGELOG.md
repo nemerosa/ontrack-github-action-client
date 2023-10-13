@@ -1,3 +1,10 @@
+## [0.1.10](https://github.com/nemerosa/ontrack-github-action-client/compare/v0.1.9...v0.1.10) (2023-10-13)
+
+
+### Bug Fixes
+
+* missing headers ([379dd45](https://github.com/nemerosa/ontrack-github-action-client/commit/379dd45ef09772b5677f109e2a4b29e35a11bc59))
+
 ## [0.1.9](https://github.com/nemerosa/ontrack-github-action-client/compare/v0.1.8...v0.1.9) (2023-10-11)
 
 
