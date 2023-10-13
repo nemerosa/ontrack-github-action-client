@@ -12,6 +12,7 @@ jobs:
     env:
       ONTRACK_URL: "${{ vars.ONTRACK_URL }}"
       ONTRACK_TOKEN: "${{ secrets.ONTRACK_TOKEN }}"
+      ONTRACK_PROJECT: "ontrack"
     permissions:
       contents: write
       packages: write
