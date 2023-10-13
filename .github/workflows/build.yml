@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ONTRACK_URL: "${{ vars.ONTRACK_URL }}"
+      ONTRACK_TOKEN: "${{ secrets.ONTRACK_TOKEN }}"
     permissions:
       contents: write
       packages: write
