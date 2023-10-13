@@ -67,4 +67,18 @@ test('testing a simple GraphQL query', async () => {
     console.log(`Testing with Ontrack URL = ${process.env.ONTRACK_URL}`)
     expect(process.env.ONTRACK_URL).not.toBeUndefined()
     expect(process.env.ONTRACK_TOKEN).not.toBeUndefined()
+    expect(process.env.ONTRACK_PROJECT).not.toBeUndefined()
+    const config = client.checkEnvironment()
+    // Calling
+    const json = await client.graphQL(config, `
+        query GetProject($project: String!) {
+            projects(name: $project) {
+                id
+                name
+            }
+        }
+    `, {project: process.env.ONTRACK_PROJECT}, true)
+    // Checking
+    expect(json.data.projects[0].id).toBeGreaterThan(0)
+    expect(json.data.projects[0].name).toBe(process.env.ONTRACK_PROJECT)
 })

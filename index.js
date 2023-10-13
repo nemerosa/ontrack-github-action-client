@@ -29,7 +29,9 @@ const graphQL = async (clientEnvironment, query, variables, logging) => {
     const result = await fetch(`${clientEnvironment.url}/graphql`, {
         method: "POST",
         headers: {
-            'X-Ontrack-Token': clientEnvironment.token
+            'X-Ontrack-Token': clientEnvironment.token,
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
         },
         credentials: "omit",
         body: JSON.stringify({
