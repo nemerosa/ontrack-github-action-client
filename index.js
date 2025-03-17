@@ -22,11 +22,13 @@ const checkEnvironment = (logging) => {
 
 
 const graphQL = async (clientEnvironment, query, variables, logging) => {
+    const url = `${clientEnvironment.url}/graphql`;
     if (logging) {
-        console.log("Query: ", query);
+        console.log("URL      : ", url);
+        console.log("Query    : ", query);
         console.log("Variables: ", variables);
     }
-    const result = await fetch(`${clientEnvironment.url}/graphql`, {
+    const result = await fetch(url, {
         method: "POST",
         headers: {
             'X-Ontrack-Token': clientEnvironment.token,
