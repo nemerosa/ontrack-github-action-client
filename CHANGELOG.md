@@ -1,3 +1,10 @@
+## [0.1.11](https://github.com/nemerosa/ontrack-github-action-client/compare/v0.1.10...v0.1.11) (2025-03-17)
+
+
+### Bug Fixes
+
+* tests ([7463ebf](https://github.com/nemerosa/ontrack-github-action-client/commit/7463ebff0bba72de10ebe119f93c81256c59a063))
+
 ## [0.1.10](https://github.com/nemerosa/ontrack-github-action-client/compare/v0.1.9...v0.1.10) (2023-10-13)
 
 
