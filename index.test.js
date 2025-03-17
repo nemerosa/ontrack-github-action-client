@@ -79,6 +79,6 @@ test('testing a simple GraphQL query', async () => {
         }
     `, {project: process.env.ONTRACK_PROJECT}, true)
     // Checking
-    expect(json.data.projects[0].id).toBeGreaterThan(0)
+    expect(Number(json.data.projects[0].id)).toBeGreaterThan(0)
     expect(json.data.projects[0].name).toBe(process.env.ONTRACK_PROJECT)
 })
